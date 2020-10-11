@@ -19,7 +19,7 @@ if __name__ == "__main__":
             "classes_path": 'model/data_classes.txt',
             "score": 0.3,
             "gpu_num": 1,
-            "model_image_size": (416, 416),
+            "model_image_size": (320, 320),
         }
     )
 
@@ -86,6 +86,7 @@ if __name__ == "__main__":
             accum_time = accum_time - 1
             fps = "FPS: " + str(curr_fps)
             curr_fps = 0
+            print(fps)
 
         timestamp = datetime.datetime.now()
         cv2.putText(
