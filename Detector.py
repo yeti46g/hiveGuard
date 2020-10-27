@@ -10,8 +10,7 @@ import numpy as np
 
 
 if __name__ == "__main__":
-    # get the file in the directory
-    # define YOLO detector
+    # define a YOLO class instance
     yolo = YOLO(
         **{
             "model_path": 'model/trained_weights_final.h5',
@@ -42,9 +41,7 @@ if __name__ == "__main__":
 
     # Read in video from camera
     # For demostration, a demo video is in the folder
-    vid = cv2.VideoCapture(os.path.join('demo.mp4'))
-
-
+    vid = cv2.VideoCapture(os.path.join('wasp.mp4'))
     video_FourCC = cv2.VideoWriter_fourcc(*"mp4v")  # int(vid.get(cv2.CAP_PROP_FOURCC))
     video_fps = vid.get(cv2.CAP_PROP_FPS)
     video_size = (
