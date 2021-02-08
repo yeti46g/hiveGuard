@@ -18,7 +18,7 @@ if __name__ == "__main__":
             "classes_path": 'model/data_classes.txt',
             "score": 0.3,
             "gpu_num": 1,
-            "model_image_size": (320, 320),
+            "model_image_size": (416, 416),
         }
     )
 
