@@ -18,7 +18,7 @@ def get_parent_dir(n=1):
     return current_path
 
 
-src_path = os.path.join(get_parent_dir(0), "src")
+src_path = os.path.join(get_parent_dir(0))
 sys.path.append(src_path)
 
 utils_path = os.path.join(get_parent_dir(1), "Utils")
