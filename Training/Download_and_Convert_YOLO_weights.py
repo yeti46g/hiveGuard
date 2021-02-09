@@ -9,7 +9,7 @@ import progressbar
 FLAGS = None
 
 root_folder = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-download_folder = os.path.join(root_folder, "training", "keras_yolo3")
+download_folder = os.path.join(root_folder, "Training", "keras_yolo3")
 data_folder = os.path.join(root_folder, "Data")
 model_folder = os.path.join(data_folder, "Model_Weights")
 download_script = os.path.join(model_folder, "Download_Weights.py")
