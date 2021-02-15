@@ -11,8 +11,8 @@ def get_parent_dir(n=1):
     return current_path
 
 
-src_path = os.path.join(get_parent_dir(1), "2_Training", "src")
-utils_path = os.path.join(get_parent_dir(1), "Utils")
+src_path = os.path.join(get_parent_dir(0), "Training")
+utils_path = os.path.join(get_parent_dir(0), "Utils")
 
 sys.path.append(src_path)
 sys.path.append(utils_path)
@@ -33,7 +33,7 @@ from Train_Utils import get_anchors
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
 # Set up folder names for default values
-data_folder = os.path.join(get_parent_dir(n=1), "Data")
+data_folder = os.path.join(get_parent_dir(n=0), "Data")
 
 image_folder = os.path.join(data_folder, "Source_Images")
 
